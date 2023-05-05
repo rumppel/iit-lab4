@@ -40,6 +40,6 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
       - name: Build Docker Image
-        run: docker build -t maxutka/cicdlab .
+        run: docker build -t rumppel/cicdlab .
       - name: Push Image to Docker Hub
-        run: docker push maxutka/cicdlab
+        run: docker push rumppel/cicdlab
